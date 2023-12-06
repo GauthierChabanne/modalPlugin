@@ -1,6 +1,4 @@
-'use strict';
-
-var React = require('react');
+import React from 'react';
 
 function styleInject(css, ref) {
   if ( ref === void 0 ) ref = {};
@@ -51,4 +49,4 @@ function Modal(_ref) {
   }, "Close")));
 }
 
-exports.Modal = Modal;
+export { Modal };

@@ -11,6 +11,11 @@ export default [
         file: 'dist/index.js',
         format: 'cjs'
       },
+      {
+        file: 'dist/index.es.js',
+        format: 'es',
+        exports: 'named'
+      }
     ],
     plugins: [
       postcss({
@@ -19,7 +24,7 @@ export default [
       }),
       babel({
         exclude: 'node_modules/**',
-        presets: ["@babel/preset-env"],
+        presets: ['@babel/preset-react'],
         extensions: ['.js', '.ts', '.jsx', '.tsx'],
 
       }),
