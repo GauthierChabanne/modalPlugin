@@ -19,7 +19,7 @@ export default [
       }),
       babel({
         exclude: 'node_modules/**',
-        presets: ['@babel/preset-react'],
+        presets: ["@babel/preset-env"],
         extensions: ['.js', '.ts', '.jsx', '.tsx'],
 
       }),
