@@ -19,7 +19,8 @@ export default [
       }),
       babel({
         exclude: 'node_modules/**',
-        presets: ['@babel/preset-react']
+        presets: ['@babel/preset-react'],
+        plugins: ['@babel/plugin-syntax-jsx']
       }),
       external(),
       resolve()

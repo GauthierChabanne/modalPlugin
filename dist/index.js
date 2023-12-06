@@ -38,10 +38,11 @@ function styleInject(css, ref) {
 var css_248z = "body.active-modal{overflow-y:hidden}.modal,.overlay{bottom:0;height:100vh;left:0;position:fixed;right:0;top:0;width:100vw}.overlay{background:#313131cc}.modal-content{background:#f1f1f1;border-radius:3px;left:50%;line-height:1.4;max-width:600px;min-width:300px;padding:14px 28px;position:absolute;top:40%;transform:translate(-50%,-50%)}.close-modal{padding:5px 7px;position:absolute;right:10px;top:10px}";
 styleInject(css_248z);
 
-function Modal({
-  open,
-  onClose
-}) {
+function Modal(_ref) {
+  let {
+    open,
+    onClose
+  } = _ref;
   console.log("hello how u doing");
   if (!open) return null;
   return /*#__PURE__*/React__default["default"].createElement("div", {
