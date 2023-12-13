@@ -16,4 +16,4 @@ function Modal({ open, onClose }){
     </div>
   );
 };
-export default Modal ;
+export { Modal } ;

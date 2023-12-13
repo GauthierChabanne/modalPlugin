@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports.Modal = Modal;
 var _react = _interopRequireDefault(require("react"));
 require("./Modal.css");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -26,4 +26,3 @@ function Modal(_ref) {
   }, "Close")));
 }
 ;
-var _default = exports.default = Modal;

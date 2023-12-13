@@ -1,10 +1,9 @@
 {
   "name": "gauthiermodalplugin",
-  "version": "0.1.57",
+  "version": "0.1.58",
   "private": false,
   "type": "module",
   "main": "dist/Modal.js",
-  "module": "dist/Modal.js",
   "dependencies": {
     "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^14.1.2",
