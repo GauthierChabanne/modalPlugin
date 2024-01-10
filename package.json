@@ -1,6 +1,6 @@
 {
   "name": "gauthiermodalplugin",
-  "version": "0.1.60",
+  "version": "0.1.61",
   "private": false,
   "main": "dist/Modal.js",
   "module": "dist/Modal.js",
