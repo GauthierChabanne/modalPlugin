@@ -1,8 +1,20 @@
 import React from 'react';
 import './Modal.css';
 
+/**
+ * The modal shown when an employe is created.
+ * @component
+ * @example
+ *
+ * const open = True;
+ * const onClose = False;
+ *
+ * return (
+ *  <Modal open={open} onClose={false} />
+ * )
+ */
+
 function Modal({ open, onClose }){
-  console.log("hello how u doing")
   if (!open) return null;
   return (
     <div className="modal">
