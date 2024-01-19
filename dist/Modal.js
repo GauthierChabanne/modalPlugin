@@ -7,12 +7,26 @@ Object.defineProperty(exports, "__esModule", {
 exports.Modal = Modal;
 var _react = _interopRequireDefault(require("react"));
 require("./Modal.css");
+/**
+ * The modal shown when an employe is created.
+ * @component
+ * @example
+ *
+ * const open = True;
+ * const onClose = function();
+ * const message = "Employé créé !";
+ *
+ * return (
+ *  <Modal open={open} onClose={onClose} message={message}  />
+ * )
+ */
+
 function Modal(_ref) {
   let {
     open,
-    onClose
+    onClose,
+    message
   } = _ref;
-  console.log("hello how u doing");
   if (!open) return null;
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "modal"
@@ -20,7 +34,7 @@ function Modal(_ref) {
     className: "overlay"
   }), /*#__PURE__*/_react.default.createElement("div", {
     className: "modal-content"
-  }, /*#__PURE__*/_react.default.createElement("h2", null, "Employee Created !"), /*#__PURE__*/_react.default.createElement("button", {
+  }, /*#__PURE__*/_react.default.createElement("h2", null, message), /*#__PURE__*/_react.default.createElement("button", {
     onClick: onClose,
     className: "close-modal"
   }, "Close")));
